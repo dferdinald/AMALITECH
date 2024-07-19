@@ -1,7 +1,7 @@
 import React, { ChangeEvent, ReactElement } from "react";
 import CopyIcon from "../../assets/icon-document.svg";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { documentActions } from "../../redux/document-slice";
+import { useAppDispatch, useAppSelector } from "../redux";
+import { documentActions } from "../document-slice";
 import { toast } from "react-hot-toast";
 
 export default function DocumentTitle(): ReactElement {

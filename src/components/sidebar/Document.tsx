@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import CopyIcon from "../../assets/icon-document.svg";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { documentActions } from "../../redux/document-slice";
+import { useAppDispatch, useAppSelector } from "../redux";
+import { documentActions } from "../document-slice";
 
 interface Props {
   createdAt: string;
@@ -26,7 +26,9 @@ export default function Document({ createdAt, name, id }: Props): ReactElement {
       >
         <img src={CopyIcon} alt="" />
         <span className="ml-4 block">
-          <span className="hidden w-fit text-neutral-600 text-xs leading-none md:block">{createdAt}</span>
+          <span className="hidden w-fit text-neutral-600 text-xs leading-none md:block">
+            {createdAt}
+          </span>
           <span
             className={`${
               activeDocId === id ? "text-primary-100" : "text-white"

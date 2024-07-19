@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import Editor from "./components/editor/Editor";
-import Header from "./components/header/Header";
-import Sidebar from "./components/sidebar/Sidebar";
-import { useAppDispatch, useAppSelector } from "./hooks/redux";
+import Editor from "../src/components/editor/Editor";
+import Header from "../src/components/header/Header";
+import Sidebar from "../src/components/sidebar/Sidebar";
+import { useAppDispatch, useAppSelector } from "../src/components/redux";
 import data from "../src/assets/data.json";
-import { documentActions } from "./redux/document-slice";
+import { documentActions } from "../src/components/document-slice";
 import { Toaster } from "react-hot-toast";
 import { TDocument } from "./types";
-import { getItem, saveItem } from "./helpers/localStorage";
+import { getItem, saveItem } from "../src/components/localStorage";
 
 function App() {
   const dispatch = useAppDispatch();
@@ -23,7 +23,11 @@ function App() {
   }, []);
 
   return (
-    <div className={`grid wrapper ${isPreview ? "preview-open" : "preview-closed"} transition-all`}>
+    <div
+      className={`grid wrapper ${
+        isPreview ? "preview-open" : "preview-closed"
+      } transition-all`}
+    >
       <Sidebar />
       <div>
         <Header />

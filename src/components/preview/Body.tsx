@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { insertDocument } from "../../redux/actions";
+import { useAppDispatch, useAppSelector } from "../redux";
+import { insertDocument } from "../actions";
 
 export default function Body(): ReactElement {
   const dispatch = useAppDispatch();

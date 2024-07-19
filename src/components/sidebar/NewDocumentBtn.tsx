@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import { toast } from "react-hot-toast";
-import { useAppDispatch } from "../../hooks/redux";
-import { insertDocument } from "../../redux/actions";
+import { useAppDispatch } from "../redux";
+import { insertDocument } from "../actions";
 
 export default function NewDocumentBtn(): ReactElement {
   const dispatch = useAppDispatch();

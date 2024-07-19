@@ -1,7 +1,7 @@
 import React, { ReactElement, SetStateAction } from "react";
 import { toast } from "react-hot-toast";
-import { useAppDispatch } from "../../hooks/redux";
-import { deleteDocs } from "../../redux/actions";
+import { useAppDispatch } from "../redux";
+import { deleteDocs } from "../actions";
 
 interface Props {
   isOpen: boolean;

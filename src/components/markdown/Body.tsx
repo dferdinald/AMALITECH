@@ -1,7 +1,7 @@
 import React, { ChangeEvent, ReactElement } from "react";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { insertDocument } from "../../redux/actions";
-import { documentActions } from "../../redux/document-slice";
+import { useAppDispatch, useAppSelector } from "../redux";
+import { insertDocument } from "../actions";
+import { documentActions } from "../document-slice";
 
 export default function Body(): ReactElement {
   const { activeDoc } = useAppSelector((state) => state.docs);

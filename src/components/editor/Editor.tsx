@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { useAppSelector } from "../../hooks/redux";
+import { useAppSelector } from "../redux";
 import { Markdown } from "../markdown/Markdown";
 import Preview from "../preview/Preview";
 

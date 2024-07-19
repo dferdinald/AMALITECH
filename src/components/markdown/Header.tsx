@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import ShowIcon from "../../assets/icon-show-preview.svg";
-import { useAppDispatch } from "../../hooks/redux";
-import { documentActions } from "../../redux/document-slice";
+import { useAppDispatch } from "../redux";
+import { documentActions } from "../document-slice";
 
 export default function Header(): ReactElement {
   const dispatch = useAppDispatch();
