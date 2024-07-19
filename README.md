@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](../in-browser-markdown-editor/starter-code/Screenshot%202024-07-18%20233925.png)
+![](./public/Screenshot%202024-07-18%20233925.png)
 
 ### Links
 
@@ -50,8 +50,8 @@ Users should be able to:
 
 ### What I learned
 
--Develop projects with react
--React State Management with useState
--Effective Use of useEffect Hook
--Integration of TypeScript
--Styling using Tailwind css
+- Develop projects with react
+- React State Management with useState
+- Effective Use of useEffect Hook
+- Integration of TypeScript
+- Styling using Tailwind css
