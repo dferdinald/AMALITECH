@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/ChadwickMorgan/in-browser-markdown-editor)
+- Solution URL: (https://github.com/dferdinald/AMALITECH)
 
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://ferdinald-in-browser-markdown-editor.netlify.app)
 
 ## My process
 
